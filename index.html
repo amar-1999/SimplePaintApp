@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Paint App</title>
+    <style>
+    h1{
+    text-align: center;
+    color: black;
+    font-family: Arial;
+    font-size:300%;		
+    }
+    canvas{
+    border: 2px solid black;
+    display:block;
+    cursor: pointer;
+    }
+    button {
+    font-family: Arial;
+    user-select: none;
+    size: 70px;
+    font-size: 20px;
+    box-shadow: black 2px 2px;
+    outline: none;
+    }
+
+    .defaultText {
+    user-select: none;
+    text-align: center;
+    }
+
+    button:hover {
+    background-color: grey;
+    }
+    button:active {
+    transform: translateY(4px);
+    }
+    </style>
+    <script src="script.js"></script>
+    <h1>Simple Paint App</h1>
+</head>
+
+<body>
+  <div align ="center">
+	<canvas id="theCanvas" width="900" height="460"></canvas>
+    <div style="position:absolute;left:1070px;top:590px;">
+        <button type="button">
+            <div id="clear" class="defaultText">Clear</div>
+        </button>
+    </div>
+  </div>
+	
+</body>
+</html>
